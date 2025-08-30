@@ -14,16 +14,16 @@ This project follow the MIT License. Take a look in the file [LICENSE](LICENSE) 
 ```bash
 Beecrowd/
 ├── Exercises/   
-	  ├── 01 - Beginner/                # Basic problems 
-	  ├── 02 - Ad-hoc/                  # Simulation problems, Dates, Games 
-	  ├── 03 - Strings/                 # Palindromes, Frequency, Ad-Hoc
-	  ├── 04 - Data Structures/         # Queue, Stack, Sort, Map, Set
-	  ├── 05 - Mathematics/             # Number Theory, Prime Numbers
-	  ├── 06 - Paradigms/               # Binary Search, Greedy, Backtracking
-	  ├── 07 - Graph/                   # Floody Fill, MST, SSSP, DAG, Maximum Flow
-	  ├── 08 - Computational Geometry/  # Points and Lines, Polygon
-	  ├── 09 - SQL/                     # Query Languages: Select, Insert, Update, Create
-	  └── 10 - Academic/                # Programming Marathon
+    ├── 01 - Beginner/                # Basic problems 
+    ├── 02 - Ad-hoc/                  # Simulation problems, Dates, Games 
+    ├── 03 - Strings/                 # Palindromes, Frequency, Ad-Hoc
+    ├── 04 - Data Structures/         # Queue, Stack, Sort, Map, Set
+    ├── 05 - Mathematics/             # Number Theory, Prime Numbers
+    ├── 06 - Paradigms/               # Binary Search, Greedy, Backtracking
+    ├── 07 - Graph/                   # Floody Fill, MST, SSSP, DAG, Maximum Flow
+    ├── 08 - Computational Geometry/  # Points and Lines, Polygon
+    ├── 09 - SQL/                     # Query Languages: Select, Insert, Update, Create
+    └── 10 - Academic/                # Programming Marathon
              ├── Lesson - 01/         # First Execises List
              └── Lesson - 02/         # Second Exercises List
 ├── LICENSE
