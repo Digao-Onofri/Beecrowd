@@ -8,13 +8,13 @@
 
 int main(){
     int N;
-    unsigned int a, b;
+    long long int a, b;
 
     scanf("%d", &N);
 
     while(N--){
 
-        scanf("%d %d", &a, &b);
+        scanf("%lld %lld", &a, &b);
         if(a <= b){
             printf("encaixa\n");
         }

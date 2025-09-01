@@ -1,6 +1,6 @@
 /*
-    Name: PUM
-    Link: https://judge.beecrowd.com/en/problems/view/1142
+    Name: Perfect Number
+    Link: https://judge.beecrowd.com/en/problems/view/1164
 */
 
 #include <stdio.h>
