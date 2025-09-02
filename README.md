@@ -71,7 +71,7 @@ int main() {
 
 Follow my progress in beecrowd:
 
-[![Beecrowd Profile](https://raw.githubusercontent.com/beecrowd/branding/main/logo/beecrowd-logo.png)](https://judge.beecrowd.com/en/profile/1070783)
+[Beecrowd Profile](https://judge.beecrowd.com/en/profile/1070783)
 
 Feel free to connect with me on Linkedin:
 
