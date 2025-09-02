@@ -1,6 +1,6 @@
 # Beecrowd Exercises
 
-This repository contains a list of exercises about programming on different languages that I developed in the Beecrowd platform.
+This repository contains a list of exercises about solving programming exercises on different languages that I developed in the Beecrowd platform.
 
 --- 
 ## 📝 License
