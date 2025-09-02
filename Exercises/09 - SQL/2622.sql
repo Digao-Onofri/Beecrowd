@@ -1,5 +1,5 @@
 /*
-    Name: legal Person
+    Name: Legal Person
     Link: https://judge.beecrowd.com/en/problems/view/2622
 */
 

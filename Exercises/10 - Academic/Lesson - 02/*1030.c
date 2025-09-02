@@ -8,23 +8,32 @@
 #include <ctype.h>
 
 int main() {
-    int qtd, size, control = 1;
-    int i, NC, len;
+    int qtd, size, answer;
+    int i, NC, control = 1;
 
     scanf("%d", &NC);
 
     while(NC--){
+        answer = 0;
         scanf("%d %d", &qtd, &size);
-        len = qtd;
+        int array[size]; 
+        memset(array, 1, sizeof(array));
+        
         for(i = 1; i <= qtd; i++){
-            len += i;
             if(i % 3 != 0){
-                len -= size + 2;
+                array[size] = 0;
+                size += 2;
             }
         }
-        len -= size;
+
+        for(i = 0; i < sizeof(array); i++){
+            if(array[i] == 1){
+                answer = i;
+                break;
+            }
+        }
         
-        printf("Case %d: %d\n", control, len);
+        printf("Case %d: %d\n", control, answer);
         control++;
     }
 

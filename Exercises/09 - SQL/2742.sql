@@ -1,6 +1,6 @@
 /*
     Name: Richard's Multiverse
-    Link: https://judge.beecrowd.com/en/problems/view/2738
+    Link: https://judge.beecrowd.com/en/problems/view/2742
 */
 
 SELECT life_registry.name, ROUND(life_registry.omega * 1.618, 3) AS "Fator N"
