@@ -20,26 +20,14 @@ int main(){
             scanf(" %[^\n]", japanese);
             scanf(" %[^\n]", portuguese);
             lyrics.insert({japanese, portuguese});
+            cout << lyrics[japanese]
         }
 
         while(lines){
-            scanf(" %[^\n]", song);
-            
-            spaces = 0;
-            for(i = 0; i < strlen(song); i++){
-                if(song[i] == ' '){
-                    spaces++;
-                }
-            }
+            scanf(" %s", song);
 
-            while(spaces){
-                for(i = 0; i < strlen(song); i++){
-                    if(song[i] == ' '){
-                        j = 0;
-                        spaces--;
-                        cout << lyrics[word];
-                    }
-                }
+            while(1){
+
             }
         }
     }
