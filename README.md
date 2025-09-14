@@ -38,6 +38,9 @@ Beecrowd/
 The name is always set with the exercise number in the order that I developed plus the standard file extention of the programming language.
 - Example: <01.c> 
 
+If the file has * before the name, it is because the solution is incorrect 
+- Example: <*01.c>
+
 ### 📌 Content Structure
 
 Each file has a header with:
