@@ -4,18 +4,24 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     char word1[13], word2[13], word3[13];
+    char vertebrado[] = "vertebrado";
+    char carnivoro[] = "carnivoro";
+    char ave[] = "ave";
+    char onivoro[] = "onivoro";
+    char inseto[] = "inseto";
+    char hematofago[] = "hematofago";
 
-    scanf("%s", word1);
+    scanf(" %s", word1);
     scanf(" %s", word2);
     scanf(" %s", word3);
 
-    printf("%s", word1);
-    if(word1 == 'vertebrado'){
-        if(word2 == 'ave\n'){
-            if(word3 == 'carnivoro\n'){
+    if(strcmp(word1, vertebrado) == 0){
+        if(strcmp(word2, ave) == 0){
+            if(strcmp(word3, carnivoro) == 0){
                 printf("aguia\n");
             }
             else{
@@ -23,7 +29,7 @@ int main(){
             }
         }
         else{
-            if(word3 == 'onivoro\n'){
+            if(strcmp(word3, onivoro) == 0){
                 printf("homem\n");
             }
             else{
@@ -32,8 +38,8 @@ int main(){
         }
     }
     else{
-        if(word2 == 'inseto\n'){
-            if(word3 == 'hematofago\n'){
+        if(strcmp(word2, inseto) == 0){
+            if(strcmp(word3, hematofago) == 0){
                 printf("pulga\n");
             }
             else{
@@ -41,7 +47,7 @@ int main(){
             }
         }
         else{
-            if(word3 == 'hematofago\n'){
+            if(strcmp(word3, hematofago) == 0){
                 printf("sanguessuga\n");
             }
             else{
