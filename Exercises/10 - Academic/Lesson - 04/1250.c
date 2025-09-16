@@ -40,7 +40,5 @@ int main(){
         printf("%d\n", hits);
     }
 
-
-
     return 0;
 }
