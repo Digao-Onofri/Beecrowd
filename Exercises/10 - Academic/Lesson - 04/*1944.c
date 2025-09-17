@@ -22,18 +22,17 @@ int main(){
 
         no_earn = false;
 
-        for(i = 0; i < strlen(letters); i++){
-            scanf(" %c", &letters[i]);
-        }
+        scanf(" %[^\n]", letters);
 
         if(aux == cases + 1){        
             j = 0;
             for(i = strlen(letters) - 1; i >= 0; i--){
-                if(letters[i] != last[j] && letters[i] != ' '){
-                    no_earn = true;
-                    break;
+                if(letters[i] == last[j]){
+                    j++;
                 }
-                j++;
+                else if(letters[i] != ' '){
+                    no_earn = true;
+                }
             }
 
             if(!no_earn){
@@ -42,10 +41,10 @@ int main(){
         }
         else{        
             for(i = strlen(letters) - 1; i >= 0; i--){
-                if(letters[i] == last[j] && letters[i] != ' '){
+                if(letters[i] == last[j]){
                     j++;
                 }
-                else{
+                else if(letters[i] != ' '){
                     no_earn = true;
                 }
              }
@@ -54,6 +53,20 @@ int main(){
                 count++;
             }
         }
+        
+        printf("%s debug\n", last);
+
+        j = 0;
+        for(i = 0; i < strlen(letters); i++){
+            if(letters[i] != ' '){
+                last[j] = letters[i];
+                j++;
+            }
+        }
+
+        printf("%s debug last\n", last);
+        printf("%s debug\n", letters);
+        printf("%d\n", count);
         
     }
 
