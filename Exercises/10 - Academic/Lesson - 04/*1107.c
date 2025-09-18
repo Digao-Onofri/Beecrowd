@@ -1,6 +1,6 @@
 /*
     Name: Laser Sculpture
-    Link: https://judge.beecrowd.com/en/problems/view/1107
+    Link: https://judge.beecrowd.com/en/problems/view/1107 
 */
 
 #include <stdio.h>

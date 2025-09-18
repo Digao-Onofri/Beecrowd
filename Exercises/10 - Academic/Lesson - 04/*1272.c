@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main(){
     int cases, i, j;
@@ -18,15 +19,9 @@ int main(){
 
         j = 0;
         for(i = 0; i < strlen(phrase); i++){
-            if(i == 0 && phrase[i] != ' '){                
+            if(islower(phrase[i]) && (phrase[i - 1] == ' ' || i == 0)){                
                 hidden[j] = phrase[i];
                 j++;
-            }
-            else if(phrase[i] == ' ' && i + 1 < strlen(phrase)){
-                if(phrase[i + 1] != ' '){
-                    hidden[j] = phrase[i + 1];
-                    j++;
-                }
             }
         }
         hidden[j] = '\0';

@@ -1,5 +1,5 @@
 /*
-    Name: Throwing Cars Away
+    Name: Throwing Cards Away
     Link: https://judge.beecrowd.com/en/problems/view/1110
 */
 
@@ -22,7 +22,7 @@ int main(){
         }
 
         k = 0;
-        while(count >= 2){        
+        while(count > 1){        
             
             for(i = 1; i <= cards; i++){
                 discarded[k] = deck[i];
