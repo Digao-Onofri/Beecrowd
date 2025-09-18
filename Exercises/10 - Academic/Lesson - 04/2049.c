@@ -10,11 +10,14 @@ char ahmoc[300000];
 
 int main(){
     int signature_int, i;
-    char signature[7];
+    char signature[12];
     
     scanf("%d", &signature_int);
     i = 0;
     while(signature_int != 0){
+        if(i != 0){
+            printf("\n");
+        }
         i++;
         scanf(" %s", ahmoc);
 

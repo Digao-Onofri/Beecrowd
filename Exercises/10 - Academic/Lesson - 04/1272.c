@@ -9,8 +9,8 @@
 
 int main(){
     int cases, i, j;
-    char phrase[50];
-    char hidden[50];
+    char phrase[51];
+    char hidden[51];
 
     scanf("%d", &cases);
 
