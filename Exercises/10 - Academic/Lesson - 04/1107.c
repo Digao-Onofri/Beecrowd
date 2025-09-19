@@ -19,6 +19,9 @@ int main(){
             if(i > 0 && lengths[i] - lengths[i - 1] > 0){
                 sum += lengths[i] - lengths[i - 1];
             }
+            if(i + 1 == length){
+                sum += height - lengths[i];
+            }
         }
 
         printf("%d\n", sum);
