@@ -1,78 +1,93 @@
-#include <iostream>
-#include <stack>
-#include <queue>
+/*
+    Name: I Can Guess the Data Structure!
+    Link: https://judge.beecrowd.com/en/problems/view/1250
+*/
 
+#include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    bool p, f, fp;
-    queue<int> fila;
-    stack<int> pilha;
-    int n, operacao, numero;
-    priority_queue<int> filaPrioridade;
+int main(){
+    stack<int> stack;
+    priority_queue<int> priority_queue;
+    queue<int> queue;
+    int cases, operations, element;
+    bool stck, prqueu, queu;
 
-    while (cin >> n)
-    {
-        while (!pilha.empty())
-            pilha.pop();
-        while (!fila.empty())
-            fila.pop();
-        while (!filaPrioridade.empty())
-            filaPrioridade.pop();
+    while(scanf("%d", &cases) != EOF){
 
-        p = true, f = true, fp = true;
-        for (int i = 0; i < n; ++i)
-        {
-            cin >> operacao >> numero;
+        while(!stack.empty()){
+            stack.pop();
+        }
 
-            if (operacao == 1)
-            {
-                if (p)
-                    pilha.push(numero);
-                if (f)
-                    fila.push(numero);
-                if (fp)
-                    filaPrioridade.push(numero);
+        while(!priority_queue.empty()){
+            priority_queue.pop();
+        }
+
+        while(!queue.empty()){
+            queue.pop();
+        }
+        
+        stck = prqueu = queu = true;
+        while(cases--){
+            scanf("%d %d", &operations, &element);
+
+            if(operations == 1){
+                if(stck){
+                    stack.push(element);
+                }
+                if(prqueu){
+                    priority_queue.push(element);
+                }
+                if(queu){
+                    queue.push(element);
+                }
             }
-            else
-            {
-                if (p)
-                {
-                    if (pilha.empty() || pilha.top() != numero)
-                        p = false;
-                    else
-                        pilha.pop();
+            else{                
+                if(stck){
+                    if(stack.top() != element){
+                        stck = false;
+                    }
+                    else{
+                        stack.pop();
+                    }
                 }
-
-                if (f)
-                {
-                    if (fila.empty() || fila.front() != numero)
-                        f = false;
-                    else
-                        fila.pop();
+                if(prqueu){
+                    if(priority_queue.top() != element){
+                        prqueu = false;
+                    }
+                    else{
+                        priority_queue.pop();
+                    }
                 }
-
-                if (fp)
-                {
-                    if (filaPrioridade.empty() || filaPrioridade.top() != numero)
-                        fp = false;
-                    else
-                        filaPrioridade.pop();
+                if(queu){
+                    if(queue.front() != element){
+                        queu = false;
+                    }
+                    else{
+                        queue.pop();
+                    }
                 }
             }
         }
 
-        if (p && !f && !fp)
-            cout << "stack" << endl;
-        else if (!p && f && !fp)
-            cout << "queue" << endl;
-        else if (!p && !f && fp)
-            cout << "priority queue" << endl;
-        else if (!p && !f && !fp)
-            cout << "impossible" << endl;
-        else
-            cout << "not sure" << endl;
+        if(stck && prqueu && queu){
+            printf("not sure\n");
+        }
+        else if((stck && prqueu) || (stck && queu) || (prqueu && queu)){
+            printf("not sure\n");
+        }
+        else if(prqueu){
+            printf("priority queue\n");
+        }
+        else if(queu){
+            printf("queue\n");
+        }
+        else if(stck){
+            printf("stack\n");
+        }
+        else{
+            printf("impossible\n");
+        }
     }
 
     return 0;

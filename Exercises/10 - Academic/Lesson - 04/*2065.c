@@ -2,7 +2,7 @@
     Name: Supermarket Line
     Link: https://judge.beecrowd.com/en/problems/view/2065.c  
 */
-
+//priority queue;
 #include <stdio.h>
 
 int main(){
@@ -22,12 +22,16 @@ int main(){
     }
 
     j = 0;
+    time = 0;
     for(i = 0; i < clients; i++){
         if(i < cashiers && cashiers > 1){
             time += time_item[i] * amount_item[i];
-            time = time / 2
+            if(i - 1 == cashiers){
+                
+            }
         }
         else{
+            printf("%d\n", time);
             time += time_item[j] * amount_item[i];
             j++;
             if(j >= cashiers){

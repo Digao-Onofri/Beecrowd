@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 typedef struct pessoas{
     char nome[50];
@@ -14,8 +15,9 @@ typedef struct pessoas{
 
 
 int main(){
-    int cases, i, j;
+    int cases, i, j, cmp;
     pessoas p[60], aux;
+    bool first = true;
 
     scanf("%d", &cases);
 
@@ -29,17 +31,11 @@ int main(){
 
         for(i = 0; i < cases; i++){
             for(j = i + 1; j < cases; j++){
-                if(p[i].cor[0] > p[j].cor[0]){
-                    aux = p[i];
-                    p[i] = p[j];
-                    p[j] = aux;
-                }
-                else if(p[i].tamanho < p[j].tamanho && p[i].cor[0] == p[j].cor[0]){
-                    aux = p[i];
-                    p[i] = p[j];
-                    p[j] = aux;
-                }
-                else if(p[i].tamanho == p[j].tamanho && p[i].cor[0] == p[j].cor[0] && p[i].nome[0] > p[j].nome[0]){
+                cmp = strcmp(p[i].cor, p[j].cor);
+
+                if (cmp > 0 || 
+                   (cmp == 0 && p[i].tamanho < p[j].tamanho) || 
+                   (cmp == 0 && p[i].tamanho == p[j].tamanho && strcmp(p[i].nome, p[j].nome) > 0)) {
                     aux = p[i];
                     p[i] = p[j];
                     p[j] = aux;
@@ -47,7 +43,10 @@ int main(){
             }
         }     
         
-        printf("\n");
+        if(!first){
+            printf("\n");
+        }
+        first = false;
         for(i = 0; i < cases; i++){
             printf("%s %c %s\n", p[i].cor, p[i].tamanho, p[i].nome);
         }
