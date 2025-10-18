@@ -1,6 +1,7 @@
 /*
     Name: Fibonot
     Link: https://judge.beecrowd.com/en/problems/view/2846
+    Time Limit Exceed
 */
 
 #include <bits/stdc++.h>
@@ -8,7 +9,7 @@ using namespace std;
 #define MAX 100010
 
 int main(){ 
-    map<int, long unsigned int> fibonacci, fibonot;
+    map<long, long> fibonacci, fibonot;
     int i, j, term, aux;
 
     fibonacci[0] = 1;

@@ -1,7 +1,6 @@
 /*
     Name: Justifier II
     Link: https://judge.beecrowd.com/en/problems/view/1278
-    Wrong answer(5%)
 */
 
 #include <bits/stdc++.h>
@@ -18,10 +17,15 @@ int main(){
     words text[101];
     string current_line, word;
     istringstream iss(current_line);
+    bool first = true;
 
     scanf("%d", &cases);
 
     while(cases != 0){
+        if(!first){
+            cout << endl;
+        }
+        first = false;
 
         memset(text, 0, sizeof(text));
         biggest = 0;
@@ -32,12 +36,13 @@ int main(){
             current_line = line;
             iss.str(current_line);
             while(iss >> word){
+                if(!text[i].phrase.empty()){   
+                    text[i].phrase += ' ';
+                }
                 text[i].phrase += word;
-                text[i].phrase += ' ';
             }
-            text[i].phrase[text[i].phrase.length() - 1] = '\0';
+            
             letters = text[i].phrase.length();
-
             if(letters > biggest){
                 biggest = letters;
             }
