@@ -22,12 +22,11 @@ void dfs_rec(vector<int> &connected, int *visited, int graph[][2010], int n, int
 int graph[2010][2010];
 
 int main(){
-    int cases, visited[2010];
+    int visited[2010];
     vector<int> connected;
     vector<int>::iterator it;
     int vertices, edges;
     int verta, vertb, way;
-    int components;
 
     while(cin >> vertices >> edges){
         connected.clear();
@@ -38,8 +37,6 @@ int main(){
 
         memset(visited, 0, sizeof(visited));
         memset(graph, 0, sizeof(graph));
-
-        components = 0;
 
         while(edges--){
             scanf("%d %d %d", &verta, &vertb, &way);
@@ -59,6 +56,20 @@ int main(){
         else{
             cout << 0 << endl;
         }
+
+        //for(i = 1; i <= vertices; i++){
+        //     dfs_rec(connected, visited, graph, vertices, i); 
+        //     if(connected.size() != vertices){
+        //         cout << 0 << endl;
+        //         printed = true;
+        //         break;
+        //     }
+        //     connected.clear();
+        // }
+        
+        // if(!printed){
+        //     cout << 1 << endl;
+        // }
     }
 
     return 0;
