@@ -48,6 +48,12 @@ Each file has a header with:
 - Problem name.
 - Link to specific statement in [Beecrowd](https://www.beecrowd.com.br/) website.
 
+If the file has * before the name the header will be:
+
+- Problem name.
+- Link to specific statement in [Beecrowd](https://www.beecrowd.com.br/) website.
+- Kind of the problem reported by Beecrowd
+
 Bellow the header is the solution of the problem.
 
 #### ✅ Complete Example:
