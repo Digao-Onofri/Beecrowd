@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define C 3e8
+#define C 300000000.0
 #define LAMBDA0 495.0
 
 int main() {
@@ -15,10 +15,10 @@ int main() {
     scanf("%lf", &speed);
 
     if(speed >= 0){
-        lambda = LAMBDA0 * sqrt((C - speed) / (C + speed)); // approaching
+        lambda = LAMBDA0 * sqrt((C - speed) / (double) (C + speed)); // approaching
     }
     else{
-        lambda = LAMBDA0 * sqrt((C + speed) / (C - speed)); 
+        lambda = LAMBDA0 * sqrt((C + speed) /(double) (C - speed)); 
     }
     // printf("%.9lf debug\n", lambda);
 
