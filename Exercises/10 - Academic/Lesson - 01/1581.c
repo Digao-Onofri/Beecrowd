@@ -7,7 +7,7 @@
 
 int main(){
     int i, N, K, flag, auxk;
-    char string[20], aux[20], common_language[20];
+    char string[20], aux[20];
     
     scanf("%d", &N);
 
@@ -33,11 +33,8 @@ int main(){
             }
         }
 
-        if(flag == 0){  
-            for(i = 0; i < sizeof(string); i++){
-                common_language[i] = string[i];
-            }
-            printf("%s\n", common_language);
+        if(flag == 0){
+            printf("%s\n", string);
         }
         else{
             printf("ingles\n");

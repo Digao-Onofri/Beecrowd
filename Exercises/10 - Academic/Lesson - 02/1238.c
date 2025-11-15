@@ -13,8 +13,6 @@ int main(){
     while(scanf("%d", &N) != EOF){
         
         while(N--){
-
-
             memset(answer, '\0', sizeof(answer));
             scanf(" %s %s", stringa, stringb);
             length = strlen(stringa) < strlen(stringb) ? strlen(stringa) : strlen(stringb);

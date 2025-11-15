@@ -1,6 +1,6 @@
 /*
     Name: Numbers of Ahmoc
-    Link: https://judge.beecrowd.com/en/problems/view/2049.c  
+    Link: https://judge.beecrowd.com/en/problems/view/2049
 */
 
 #include <stdio.h>
