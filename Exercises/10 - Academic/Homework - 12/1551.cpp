@@ -17,10 +17,12 @@ int main(){
         memset(chars, 0, sizeof(chars));
         count = 0;
         for(i = 0; i < strlen(phrase); i++){
-            if(chars[phrase[i] - 97] == 0){
-                count++;
+            if(isalpha(phrase[i])){
+                if(chars[phrase[i] - 97] == 0){
+                    count++;
+                }
+                chars[phrase[i] - 97] = 1;
             }
-            chars[phrase[i] - 97] = 1;
         }
 
         if(count == 26){

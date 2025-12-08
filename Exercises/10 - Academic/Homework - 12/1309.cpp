@@ -2,6 +2,7 @@
     Name: Monetary Formatting
     Link: https://judge.beecrowd.com/en/problems/view/1309
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 

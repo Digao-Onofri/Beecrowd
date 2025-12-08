@@ -50,9 +50,9 @@ int main(){
 
         consonant = false;
         j = 0;
-        for(i = 0; i < strlen(phrase); ++i){
+        for(i = 0; i < strlen(phrase); i++){
 
-            if(phrase[i] == ' ') i++;
+            if(phrase[i] == ' ' && i + 1 < strlen(phrase)) i++;
             if(j == strlen(key)) j = 0;
             
             if(i == 0){
@@ -67,8 +67,7 @@ int main(){
                 }
             }
 
-
-            if(consonant){
+            if(consonant && isalpha(phrase[i])){
                 phrase[i] = mat[key[j] - 97][phrase[i] - 97];
                 j++;
             }

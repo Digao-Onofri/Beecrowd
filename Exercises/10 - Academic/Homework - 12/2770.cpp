@@ -13,7 +13,7 @@ int main(){
     while(cin >> company1 >> company2 >> cases){
         while(cases--){
             cin >> client1 >> client2;
-            if(company1 * company2 >= client1 * client2){
+            if((company1 >= client1 && company2 >= client2) || (company1 >= client2 && company2 >= client1)){
                 cout << "Sim" << endl;
             } else{
                 cout << "Nao" << endl;

@@ -2,6 +2,7 @@
     Name: Simple Base Conversion
     Link: https://judge.beecrowd.com/en/problems/view/1199
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 

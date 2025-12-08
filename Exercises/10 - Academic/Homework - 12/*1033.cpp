@@ -2,6 +2,7 @@
     Name: How Many Calls?
     Link: https://judge.beecrowd.com/en/problems/view/1033
 */
+
 #include <bits/stdc++.h>
 #define MAX 2e63 - 1;
 using namespace std;

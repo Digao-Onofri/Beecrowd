@@ -8,7 +8,8 @@ using namespace std;
 
 int main(){
     vector<int> players;
-    int cases, i, last, grades, qualifiers;
+    vector<int>::iterator i;
+    int cases, last, grades, qualifiers;
 
     cin >> cases >> qualifiers;
 
@@ -17,11 +18,12 @@ int main(){
         players.push_back(grades);
     }
 
-    sort(players.begin(), players.end());
-    
-    i = qualifiers;
+    sort(players.begin(), players.end(), greater<int>());
+
+    i = players.begin() + qualifiers;
     last = players[qualifiers - 1];
-    while(last == players[i]){
+    while(last == *i){
+        if(i == players.end()) break;
         i++;
         qualifiers++;
     }
