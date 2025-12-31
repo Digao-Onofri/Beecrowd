@@ -1,6 +1,7 @@
 /*
     Name: Square Matrix I
     Link: https://judge.beecrowd.com/en/problems/view/1435
+    incomplete
 */
 
 #include <bits/stdc++.h>

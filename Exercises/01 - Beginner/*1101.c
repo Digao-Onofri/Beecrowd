@@ -1,6 +1,7 @@
 /*
     Name: Sum of Consecutive Odd Numbers II
     Link: https://judge.beecrowd.com/en/problems/view/1101
+    wrong answer (10%)
 */
 
 #include <stdio.h>

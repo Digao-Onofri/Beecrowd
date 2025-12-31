@@ -1,6 +1,7 @@
 /*
     Name: Sequence IJ 3
     Link: https://judge.beecrowd.com/en/problems/view/1098
+    wrong answer (65%)
 */
 
 #include <stdio.h>
