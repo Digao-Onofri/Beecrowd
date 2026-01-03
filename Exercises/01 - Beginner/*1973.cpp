@@ -46,7 +46,6 @@ int main(){
             i--;
         }
 
-        cout << i << endl;
     }
 
     cout << stoled << " " << sum << endl;
