@@ -1,31 +1,37 @@
 /*
     Name: C Mais ou Menos?
     Link: https://judge.beecrowd.com/en/problems/view/2486
-    wrong answer (15%)
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int vitamin(string fruit){
-    
-    if(fruit == " suco de laranja"){
+int vitamin(char *fruit){
+    char suco[25] = "suco de laranja\0";
+    char morango[25] = "morango fresco\0";
+    char mamao[25] = "mamao\0";
+    char goiaba[25] = "goiaba vermelha\0";
+    char manga[25] = "manga\0";
+    char laranja[25] = "laranja\0";
+
+    if(strcmp(fruit, suco) == 0){
         return 120;
-    } else if(fruit == " morango" || fruit == " mamao"){
+    } else if(strcmp(fruit, morango) == 0|| strcmp(fruit, mamao) == 0){
         return 85;
-    } else if(fruit == " goiaba"){
+    } else if(strcmp(fruit, goiaba) == 0){
         return 70;
-    } else if(fruit == " manga"){
+    } else if(strcmp(fruit, manga) == 0){
         return 56;
-    } else if(fruit == " laranja"){
+    } else if(strcmp(fruit, laranja) == 0){
         return 50;
     } else{
         return 34;
     }
 }
+
 int main(){
     int cases, amount, sum;
-    string fruit;
+    char fruit[25];
 
     while(cin >> cases){
         if(cases == 0){
@@ -35,7 +41,7 @@ int main(){
         sum = 0;
         while(cases--){
             cin >> amount;
-            getline(cin, fruit);
+            scanf(" %[^\n]", fruit);
 
             sum += (amount * vitamin(fruit));
         }
