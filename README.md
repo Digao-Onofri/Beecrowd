@@ -12,6 +12,7 @@ This project follow the MIT License. Take a look in the file [LICENSE](LICENSE) 
 ## 📂 Repository Structure
 
 ```bash
+Contests/
 ├── Beecrowd/
     ├── Exercises/   
         ├── 01 - Beginner/                # Basic problems 
