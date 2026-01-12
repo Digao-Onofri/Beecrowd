@@ -13,6 +13,7 @@ This project follow the MIT License. Take a look in the file [LICENSE](LICENSE) 
 
 ```bash
 Contests/
+├── AtCoder
 ├── Beecrowd/
     ├── Exercises/   
         ├── 01 - Beginner/                # Basic problems 
@@ -27,7 +28,6 @@ Contests/
         └── 10 - Academic/                # Programming Marathon
                 ├── Lesson - 01/         # First Execises List
                 └── Lesson - 02/         # Second Exercises List
-├── AtCoder
 ├── Codeforces
 ├── LICENSE
 └── README.md
