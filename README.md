@@ -1,6 +1,6 @@
-# Beecrowd Exercises
+# Programming Exercises
 
-This repository contains a list of programming solved exercises on different languages that I developed in the Beecrowd platform.
+This repository contains a list of programming solved exercises on different languages that I developed in the multi platforms.
 
 --- 
 ## 📝 License
@@ -12,20 +12,22 @@ This project follow the MIT License. Take a look in the file [LICENSE](LICENSE) 
 ## 📂 Repository Structure
 
 ```bash
-Beecrowd/
-├── Exercises/   
-    ├── 01 - Beginner/                # Basic problems 
-    ├── 02 - Ad-hoc/                  # Simulation problems, Dates, Games 
-    ├── 03 - Strings/                 # Palindromes, Frequency, Ad-Hoc
-    ├── 04 - Data Structures/         # Queue, Stack, Sort, Map, Set
-    ├── 05 - Mathematics/             # Number Theory, Prime Numbers
-    ├── 06 - Paradigms/               # Binary Search, Greedy, Backtracking
-    ├── 07 - Graph/                   # Floody Fill, MST, SSSP, DAG, Maximum Flow
-    ├── 08 - Computational Geometry/  # Points and Lines, Polygon
-    ├── 09 - SQL/                     # Query Languages: Select, Insert, Update, Create
-    └── 10 - Academic/                # Programming Marathon
-             ├── Lesson - 01/         # First Execises List
-             └── Lesson - 02/         # Second Exercises List
+├── Beecrowd/
+    ├── Exercises/   
+        ├── 01 - Beginner/                # Basic problems 
+        ├── 02 - Ad-hoc/                  # Simulation problems, Dates, Games 
+        ├── 03 - Strings/                 # Palindromes, Frequency, Ad-Hoc
+        ├── 04 - Data Structures/         # Queue, Stack, Sort, Map, Set
+        ├── 05 - Mathematics/             # Number Theory, Prime Numbers
+        ├── 06 - Paradigms/               # Binary Search, Greedy, Backtracking
+        ├── 07 - Graph/                   # Floody Fill, MST, SSSP, DAG, Maximum Flow
+        ├── 08 - Computational Geometry/  # Points and Lines, Polygon
+        ├── 09 - SQL/                     # Query Languages: Select, Insert, Update, Create
+        └── 10 - Academic/                # Programming Marathon
+                ├── Lesson - 01/         # First Execises List
+                └── Lesson - 02/         # Second Exercises List
+├── AtCoder
+├── Codeforces
 ├── LICENSE
 └── README.md
 ```
@@ -35,7 +37,7 @@ Beecrowd/
 ## 📄 File Structure
 ### 📌 File Name
 
-The name is always set with the exercise number in the order that I developed plus the standard file extention of the programming language.
+The name is always set with the exercise number/name in the order that I developed plus the standard file extention of the programming language.
 - Example: <01.c> 
 
 If the file has * before the name, it is because the solution is incorrect or don't pass in all the test cases
@@ -46,13 +48,13 @@ If the file has * before the name, it is because the solution is incorrect or do
 Each file has a header with:
 
 - Problem name.
-- Link to specific statement in [Beecrowd](https://www.beecrowd.com.br/) website.
+- Link to specific statement in the specific website.
 
 If the file has * before the name the header will be:
 
 - Problem name.
-- Link to specific statement in [Beecrowd](https://www.beecrowd.com.br/) website.
-- Kind of the problem reported by Beecrowd
+- Link to specific statement in the specific website.
+- Kind of the problem reported by platform
 
 Bellow the header is the solution of the problem.
 
@@ -61,7 +63,7 @@ Bellow the header is the solution of the problem.
 ```1000.c
 /*
     Name: Hello World
-    Link: https://judge.beecrowd.com/en/problems/view/1000
+    Link: https://judge.beecrowd.com/en/problems/view/1000 (in this case beecrowd link)
 */
 
 #include <stdio.h>
@@ -81,6 +83,8 @@ int main() {
 Follow my progress in beecrowd:
 
 [Beecrowd Profile](https://judge.beecrowd.com/en/profile/1070783)
+[Codeforces Profile](https://codeforces.com/profile/RPO)
+[Atcoder Profile](https://atcoder.jp/users/SkylineGtr)
 
 Feel free to connect with me on Linkedin:
 
