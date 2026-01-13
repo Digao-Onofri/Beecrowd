@@ -1,7 +1,7 @@
 /*
     Name: Caindo de Paraquedas
     Link: https://codeforces.com/group/YgJmumGtHD/contest/103794/problem/F
-    Wrong answer on test 11
+    levar em conta que é possivel dar 180 para direita e para esquerda ou seja completa 360
 */
 
 #include <bits/stdc++.h>
@@ -26,7 +26,7 @@ int main(){
             sum -= value;
         }
 
-        if(d * value >= 360 || e * value >= 360 || abs(sum) >= 360){
+        if(abs(sum) >= 360 || d * value + e * value >= 360 || d * value >= 360 || e * value >= 360){
             possible = true;
             break;
         }
